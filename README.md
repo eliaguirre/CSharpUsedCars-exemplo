@@ -1,9 +1,9 @@
+## RUN
 
+```console
+foo@bar:~$ cd usedcars
+foo@bar:~$ dotnet run
+```
 
-##RUN##
-cd usedcars
-dotnet run
-
-##
-In browser
+## In browser
 http://localhost:5000/
