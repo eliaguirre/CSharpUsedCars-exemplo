@@ -19,6 +19,13 @@ public class CarsController : Controller
         this.respository=respository;
     }
 
+
+    /// <summary>
+    /// Este metodo visible desde HTTP regresa el total de caros dentro del repositorio
+    /// </summary>
+    /// <returns>
+    /// A result with de collection for Cars
+    /// </returns>
     [HttpGet("[action]")]
     public Result<IEnumerable<Car> > Index()
     {
@@ -31,6 +38,9 @@ public class CarsController : Controller
     }
 
 
+    /// <summary>
+    /// Consulta un Car con el id especificado
+    /// </summary>
     [HttpGet("{id}")]
     public Result<Car> Get(long id)
     {
@@ -43,6 +53,9 @@ public class CarsController : Controller
         return result;
     }
 
+    /// <summary>
+    /// Crea un nuevo Car segun los datos enviados por POST
+    /// </summary>
     [HttpPost("[action]")]
     public Result<string> Create( [FromBody] Car car)
     {
@@ -57,6 +70,9 @@ public class CarsController : Controller
         return result;
     }
 
+    /// <summary>
+    /// Elimina un Car segun el ID especificado
+    /// </summary>
     [HttpPost("[action]")]
     public Result<string> Delete([FromBody] Car id)
     {
@@ -69,6 +85,9 @@ public class CarsController : Controller
         return result;
     }
 
+    /// <summary>
+    /// Actualiza la informacion del objecto Car con el Id especificado
+    /// </summary>
     [HttpPut("{id}")]
     public Result<string> Edit(long id,[FromBody] Car car)
     {
