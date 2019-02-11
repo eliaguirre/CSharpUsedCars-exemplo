@@ -1,0 +1,28 @@
+{
+  "car": [
+    {
+      "brand": "malibu",
+      "model": "chevrolet",
+      "year": 2019,
+      "kilometers": 12312.0,
+      "price": 123123.0,
+      "id": 1
+    },
+    {
+      "brand": "versa",
+      "model": "Nissan",
+      "year": 2019,
+      "kilometers": 123.0,
+      "price": 123123.0,
+      "id": 2
+    },
+    {
+      "brand": "uno way",
+      "model": "fiat",
+      "year": 2016,
+      "kilometers": 12312.0,
+      "price": 123123.0,
+      "id": 3
+    }
+  ]
+}
